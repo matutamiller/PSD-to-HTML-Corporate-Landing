@@ -1,0 +1,493 @@
+@import "fonts.css";
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	min-height: 100%;
+}
+
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+section {
+	display: flex;
+	position: relative;
+}
+
+#header-section {
+	min-height: 100vh;
+	background: url(images/bg.jpg) no-repeat fixed;
+	background-size: cover;
+}
+
+.content-wr {
+	position: relative;
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+#header-section>.flex {
+ 	flex-direction: column;
+ 	justify-content: center;
+ 	align-items: center;
+ }
+
+ #header-text {
+	font-family: 'Exo', sans-serif;
+	color: #282828;
+	font-size: 60px;
+	font-weight: 100;
+	line-height: 75px;
+	max-width: 700px;
+	text-align: center;
+}
+#roundbtn{
+	padding: 30px;
+	border-radius: 50%;
+}
+
+#roundbtn a {
+	display: block;
+	background: no-repeat center;
+	background-size: cover;
+	width: 55px;
+	height: 55px;
+}
+
+ #redbtn {
+ 	width: 190px;
+	height: 50px;
+	background-color: #ff6d6d;
+	border: none;
+	border-radius: 3px;
+}
+	
+ #redbtn a {
+ 	display: inline-block;
+ 	text-decoration: none;
+ 	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #ffffff;
+	padding: 16px 55px;
+}
+
+.smalltext {
+	font-family: 'Exo', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	color: #282828;
+	opacity: 0.6;
+	margin-top: 16px;	
+}
+
+#two {
+	min-height: 40vh;
+	background: url(images/pic4bg.jpg) right bottom no-repeat fixed;
+}
+.selling-text{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+}
+.selling-text {
+	width: 50%;
+	height: 100%;
+	padding: 3%
+}
+@media screen and (max-width: 960px) {
+	.selling-text {
+		width: 80%;
+		padding: 10%
+	}
+}
+@media screen and (max-width: 600px) {
+	.selling-text {
+		width: 94%;
+		padding: 3%
+	}
+}
+.orange-feature {
+	font-family: 'Exo', sans-serif;
+	color: #ff6d6d;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 50px;
+	text-transform: uppercase;
+}
+.heading {
+	font-family: 'Exo', sans-serif;
+	font-size: 30px;
+	font-weight: 500;
+	color: #282828;
+	line-height: 50px;
+}
+.dots {
+	color: #ff6d6d;
+}
+
+.text {
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	color: #282828;
+	line-height: 26px;
+	opacity: 0.7; 
+}
+
+#three {
+	min-height: 50vh;
+	background: url(images/bg3max.jpg) no-repeat center;
+	background-size: cover;
+}
+
+.three-text {
+	text-align: center;
+	margin-top: 130px;
+	margin-bottom: 90px;
+}
+
+.content-wr .block {
+	flex-direction: row;
+	/**margin: 0 -15px;**/
+}
+.auto {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 15px 15px;
+	align-items: center;
+	box-sizing: border-box;
+	text-align: center;
+}
+.col {
+	width: calc(33.33333% - 30px);
+}
+
+@media screen and (max-width: 960px) {
+	.col {
+		width: calc(50% - 30px);
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.col {
+		width: calc(100% - 30px);
+	}
+}
+
+.block-title {
+	font-family: 'Exo', sans-serif;
+	font-size: 22px;
+	font-weight: 500;
+	color: #282828;
+	line-height: 50px;
+	margin-top: 30px;
+}
+
+.icon {
+	background: no-repeat center;
+	background-size: cover;
+	width: 67px;
+	height: 67px;
+	border-radius: 50%;
+}
+
+#description {
+	min-height: 50vh;
+	background: url(images/descriptionbg.jpg) no-repeat center;
+	background-size: cover;
+}
+
+.descr {
+	max-width: 50%;
+	padding:3%;
+	float: right;
+	margin-top: 7%;
+}
+
+#team {
+	min-height: 50vh;
+	background: url(images/teambg.jpg) no-repeat center;
+	background-size: cover;
+}
+
+.teampic {
+	background: no-repeat center;
+	background-size: cover;
+	width: 80px;
+	height: 80px;
+	margin-top: 100px;
+}
+
+.team-title {
+	font-family: 'Exo', sans-serif;
+	font-size: 22px;
+	font-weight: 500;
+	color: #ffffff;
+	line-height:;
+	margin-top: 30px;
+}
+
+.team-position {
+	font-family: 'Exo', sans-serif;
+	color: #ff6d6d;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 50px;
+}
+
+.team-text {
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	font-style: italic;
+	color: #ffffff;
+	line-height: 20px;
+	opacity: 0.7; 
+}
+
+.content-wr .logo {
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.log-o {
+	background: no-repeat center;
+	background-size: contain;
+	width: 130px;
+	height: 90px;
+	margin-top: 100px;
+	background-color: #ffffff;
+	opacity: 0.1;
+	margin-bottom: 90px;
+	margin-top: 100px;
+}
+
+#browser {
+	min-height: 50vh;
+	background: url(images/browserbg.jpg) no-repeat center;
+	background-size: cover;
+}
+
+.browser-text {
+	flex-direction: column;
+	text-align: center;
+	max-width: 70%;
+	margin: 100px auto;
+}
+
+#try-now {
+	min-height: 50vh;
+	background-color: #323969;
+}
+
+.contact {
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.contact-text {
+	margin-top: 100px;
+}
+
+.contact-title {
+	font-family: 'Exo', sans-serif;
+	font-size: 40px;
+	font-weight: 500;
+	color: #ffffff;
+	line-height: 50px;
+	margin-bottom: 100px;
+}
+form {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+@media screen and (max-width: 900px) {
+	form {
+		justify-content: center;
+	}
+}
+
+input[type="text"], input[type="password"] {
+	font-family: 'Exo', sans-serif;
+	color: #f6f5f3;
+	font-size: 16px;
+	font-weight: 400;
+	text-transform: uppercase;
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius: 3px;
+	border: 1px solid white;
+	height: 49px;
+	width: 280px;
+	padding-left: 20px;
+	opacity: 0.5;
+}
+
+input[type="submit"] {
+	font-family: 'Exo', sans-serif;
+	color: #f6f5f3;
+	font-size: 16px;
+	font-weight: 400;
+	font-style: regular;
+	text-transform: uppercase;
+	background-color: #ff6d6d;
+	border-radius: 3px;
+	border: 1px solid #ff6d6d;
+	box-shadow: 0 3px 3px rgba(14, 15, 15, 0.25);
+	width: 300px;
+	height: 51px;
+}
+
+.form-text {
+	font-family: 'Exo', sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+	color: #f6f5f3;
+	line-height: 35px;
+	opacity: 0.6; 
+	margin-top: 50px;
+
+}
+
+.form-text a {
+	font-family: 'Exo', sans-serif;
+	font-size:12px;
+	font-weight: 400;
+	color: #f6f5f3;
+	line-height: 35px;
+	opacity: 0.6; 
+}
+
+.form-block {
+	max-height: 128px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: space-around;
+	padding: 10px 10px;
+}
+
+#footer {
+	min-height: 30vh;
+}
+
+#footer .flex{
+	justify-content: space-between;
+}
+
+#footer-sector1 {
+	max-width: 300px;
+	margin: 0 15px;
+}
+
+#footer-sector2 {
+	max-width: 150px;
+	margin: 0 15px;
+	flex-direction: column;
+}
+
+#footer-sector3 {
+	max-width: 150px;
+	margin: 0 15px;
+	flex-direction: column;
+}
+
+#footer-sector4 {
+	max-width: 300px;
+	margin: 0 15px;
+}
+
+.footer-title {
+	font-family: 'Exo', sans-serif;
+	font-size: 22px;
+	font-weight: 500;
+	color: #282828;
+	line-height: 50px;
+	margin-top: 90px;
+}
+
+#footer-logo {
+	background: no-repeat center;
+	background-size: contain;
+	width: 100px;
+	height: 50px;
+	margin-top: 90px;
+}
+
+.footer-text, .footer-text a {
+	font-family: 'Exo', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	color: #282828;
+	text-decoration: none;
+	opacity: 0.7;
+	line-height: 30px;
+}
+
+#newsletter {
+	width: 250px;
+	height: 49px;
+	opacity: 0.4;
+	background: url(images/plane.png) no-repeat right;
+	background-color: rgba(141, 141, 141, 0.2);
+	border: 1px solid #4e4e5e;
+	border-radius: 3px;
+	display: flex;
+	flex-direction: row;
+	opacity: 0.8;
+}
+
+#social-icons {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: 20px 0;
+	width: 250px;
+}
+
+#social-icons a{
+	display: block;
+	background: no-repeat center;
+	background-size: contain;
+	width: 20px;
+	height: 20px;
+	filter: grayscale(100%);
+}
+
+#social-icons a:hover{
+	display: block;
+	background: no-repeat center;
+	background-size: contain;
+	width: 20px;
+	height: 20px;
+	filter: none;
+}
+
+footer {
+	background-color: #ff6d6d;
+}
+
+footer .content-wr {
+	min-height: 10vh;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	color: #ffffff;
+	opacity: 0.7;
+	font-family: 'Exo', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	padding: 0 15px;
+}
